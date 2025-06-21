@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, FileText, Calendar, Receipt, LayoutDashboard, Check, Star } from 'lucide-react';
+import { Users, FileText, Calendar, Receipt, LayoutDashboard, Check } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -36,35 +36,6 @@ const Index = () => {
     "Never miss a follow-up or payment reminder"
   ];
 
-  const testimonials = [
-    {
-      quote: "Evolvyn transformed our agency operations. We're closing deals faster and our clients love the seamless experience.",
-      author: "Sarah Chen",
-      role: "Founder, Digital Growth Co",
-      company: "150+ clients served"
-    },
-    {
-      quote: "The automation has freed up my team to focus on strategy instead of paperwork. Game changer for consultants.",
-      author: "Marcus Rodriguez",
-      role: "Senior Consultant",
-      company: "Tech Advisory Partners"
-    },
-    {
-      quote: "Our proposal turnaround went from days to hours. The ROI was immediate and substantial.",
-      author: "Emily Watson",
-      role: "CEO, Strategy Plus",
-      company: "$2M+ in proposals generated"
-    }
-  ];
-
-  const trustedCompanies = [
-    "TechConsult Pro",
-    "Growth Partners",
-    "Digital Advisory",
-    "Strategy Labs",
-    "Innovation Hub"
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Dark Gradient */}
@@ -77,7 +48,7 @@ const Index = () => {
               variant="secondary" 
               className="mb-8 px-6 py-3 text-sm font-medium bg-white/10 text-white border-white/20 backdrop-blur-sm"
             >
-              Trusted by 500+ Service Businesses
+              AI-Powered Backend Automation
             </Badge>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
@@ -118,22 +89,6 @@ const Index = () => {
         
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/5 pointer-events-none"></div>
-      </section>
-
-      {/* Trusted By Section */}
-      <section className="bg-[#F9FAFB] py-16 border-b">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-center text-sm text-gray-500 mb-10 font-medium tracking-wide uppercase">
-            Trusted by leading service businesses
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-            {trustedCompanies.map((company, index) => (
-              <div key={index} className="text-gray-400 font-semibold text-lg">
-                {company}
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Problem/Solution */}
@@ -290,46 +245,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-[#F9FAFB] py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
-              Loved by Service Professionals
-            </h2>
-            <p className="text-xl text-gray-600 font-light">
-              See what our customers are saying about their results with Evolvyn.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-1" style={{
-                boxShadow: '0 4px 24px rgba(0, 0, 0, 0.06)'
-              }}>
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <div className="flex text-[#24E8F8] mb-6">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#0D1E44] text-lg leading-relaxed mb-8 font-light">
-                      "{testimonial.quote}"
-                    </p>
-                  </div>
-                  <div>
-                    <div className="font-semibold text-[#0D1E44] text-lg">{testimonial.author}</div>
-                    <div className="text-gray-600 mb-1">{testimonial.role}</div>
-                    <div className="text-sm font-medium" style={{ color: '#6C4FD6' }}>{testimonial.company}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative overflow-hidden" style={{
         background: 'linear-gradient(135deg, #0D1E44 0%, #102A5B 100%)'
@@ -339,7 +254,7 @@ const Index = () => {
             Ready to Automate Your Service Business?
           </h2>
           <p className="text-xl text-[#E0E0E0] mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-            Join 500+ service professionals who have transformed their operations with Evolvyn. 
+            Transform your operations with Evolvyn's AI-powered automation. 
             Book a free demo and see results in your first week.
           </p>
           
