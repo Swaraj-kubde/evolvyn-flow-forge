@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Users, FileText, Calendar, Database, LayoutDashboard, Mail, MessageSquare, Check, Invoice } from 'lucide-react';
+import { ArrowDown, Users, FileText, Calendar, Database, LayoutDashboard, Mail, MessageSquare, Check, Receipt } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -23,7 +23,7 @@ const Index = () => {
       description: "Streamline client onboarding with automated workflows that ensure nothing falls through the cracks."
     },
     {
-      icon: Invoice,
+      icon: Receipt,
       title: "Smart Invoicing",
       description: "Automate invoice generation, tracking, and follow-ups to get paid faster and more consistently."
     }
@@ -225,7 +225,7 @@ const Index = () => {
                   
                   <div className="bg-gray-50 rounded-lg p-4">
                     <div className="flex items-center gap-2 mb-2">
-                      <Invoice className="w-4 h-4 text-purple-600" />
+                      <Receipt className="w-4 h-4 text-purple-600" />
                       <span className="text-sm font-medium text-gray-700">Revenue This Month</span>
                     </div>
                     <div className="text-2xl font-bold text-gray-900">$47.2k</div>
