@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, FileText, Calendar, Receipt, LayoutDashboard, Check } from 'lucide-react';
+import { Users, FileText, Calendar, Receipt, LayoutDashboard, Check, Shield, Code, Globe } from 'lucide-react';
 
 const Index = () => {
   const features = [
@@ -52,7 +52,7 @@ const Index = () => {
             </Badge>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-              AI-Powered Backend 
+              AI-Powered Business 
               <span className="block bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">
                 Automation
               </span>
@@ -100,13 +100,16 @@ const Index = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Service businesses waste 40% of their time on administrative work. 
-              Evolvyn automates your backend operations so you can focus on what matters most.
+              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent font-semibold"> EvolvynAi </span>
+              automates your backend operations so you can focus on what matters most.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">Before Evolvyn</h3>
+              <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">Before 
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi</span>
+              </h3>
               <ul className="space-y-6">
                 {[
                   "Hours spent on manual proposal creation",
@@ -123,7 +126,9 @@ const Index = () => {
             </div>
 
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">After Evolvyn</h3>
+              <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">After 
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi</span>
+              </h3>
               <ul className="space-y-6">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start gap-4">
@@ -176,7 +181,9 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
-              How Evolvyn Works
+              How 
+              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi </span>
+              Works
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
               Get up and running in 30 minutes with our intuitive PERN stack dashboard.
@@ -189,7 +196,9 @@ const Index = () => {
               <div className="bg-[#1a2b4a] rounded-2xl shadow-xl p-8 border border-white/10">
                 <div className="flex items-center gap-3 mb-8 border-b border-white/10 pb-6">
                   <LayoutDashboard className="w-7 h-7 text-[#24E8F8]" />
-                  <h3 className="text-xl font-semibold text-white">Evolvyn Dashboard</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">EvolvynAi</span> Dashboard
+                  </h3>
                 </div>
                 
                 <div className="grid md:grid-cols-3 gap-6">
@@ -225,7 +234,7 @@ const Index = () => {
               {[
                 { step: "1", title: "Connect Your Tools", desc: "Link your existing CRM, email, and accounting software in minutes." },
                 { step: "2", title: "Configure Workflows", desc: "Set up automated workflows using our intuitive drag-and-drop builder." },
-                { step: "3", title: "Watch It Work", desc: "Sit back as Evolvyn handles lead nurturing, proposals, and invoicing automatically." }
+                { step: "3", title: "Watch It Work", desc: "Sit back as EvolvynAi handles lead nurturing, proposals, and invoicing automatically." }
               ].map((item, index) => (
                 <div key={index} className="text-center">
                   <div 
@@ -254,7 +263,9 @@ const Index = () => {
             Ready to Automate Your Service Business?
           </h2>
           <p className="text-xl text-[#E0E0E0] mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-            Transform your operations with Evolvyn's AI-powered automation. 
+            Transform your operations with 
+            <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent font-semibold"> EvolvynAi's </span>
+            AI-powered automation. 
             Book a free demo and see results in your first week.
           </p>
           
@@ -271,17 +282,44 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Trust Signals Section */}
+      <section className="bg-[#F9FAFB] py-16 border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-12 text-center">
+            <div className="flex flex-col items-center">
+              <Shield className="w-12 h-12 text-[#24E8F8] mb-4" />
+              <h3 className="text-lg font-semibold text-[#0D1E44] mb-2">Trusted by service businesses</h3>
+              <p className="text-gray-600 text-sm">Enterprise-grade security and reliability</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <Globe className="w-12 h-12 text-[#24E8F8] mb-4" />
+              <h3 className="text-lg font-semibold text-[#0D1E44] mb-2">GDPR-safe & secure</h3>
+              <p className="text-gray-600 text-sm">Full compliance with data protection regulations</p>
+            </div>
+            
+            <div className="flex flex-col items-center">
+              <Code className="w-12 h-12 text-[#24E8F8] mb-4" />
+              <h3 className="text-lg font-semibold text-[#0D1E44] mb-2">No coding required for end users</h3>
+              <p className="text-gray-600 text-sm">Simple, intuitive interface for everyone</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-[#0D1E44] py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-6">Evolvyn</h3>
+              <h3 className="text-3xl font-bold mb-6">
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">EvolvynAi</span>
+              </h3>
               <p className="text-[#E0E0E0]/80 mb-6 leading-relaxed">
                 AI-powered backend automation for service businesses.
               </p>
               <div className="text-[#E0E0E0]/60 text-sm">
-                <p>contact@evolvyn.com</p>
+                <p>contact@evolvynai.com</p>
                 <p>+1 (555) 123-4567</p>
               </div>
             </div>
@@ -318,7 +356,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-[#E0E0E0]/60">
-            <p>&copy; 2024 Evolvyn. All rights reserved.</p>
+            <p>&copy; 2025 EvolvynAi. All rights reserved.</p>
           </div>
         </div>
       </footer>
