@@ -36,9 +36,48 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Network Grid Background */}
+      <div 
+        className="fixed inset-0 opacity-10 pointer-events-none z-0"
+        style={{
+          backgroundImage: `url('/lovable-uploads/af94c729-7a05-474a-87b8-570189ede139.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      
+      {/* Navbar */}
+      <nav className="relative z-10 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <h1 className="text-2xl font-bold">
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">CoslynAI</span>
+              </h1>
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#features" className="text-gray-600 hover:text-[#6C4FD6] transition-colors">Features</a>
+              <a href="#how-it-works" className="text-gray-600 hover:text-[#6C4FD6] transition-colors">How it Works</a>
+              <a href="#contact" className="text-gray-600 hover:text-[#6C4FD6] transition-colors">Contact</a>
+              <Button 
+                size="sm" 
+                className="text-white border-0"
+                style={{
+                  background: 'linear-gradient(135deg, #6C4FD6 0%, #24E8F8 100%)'
+                }}
+                onClick={() => window.open('https://evolvyn-form1.vercel.app/', '_blank')}
+              >
+                Book Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section - Dark Gradient */}
-      <section className="relative overflow-hidden" style={{
+      <section className="relative overflow-hidden z-10" style={{
         background: 'linear-gradient(135deg, #0D1E44 0%, #102A5B 100%)'
       }}>
         <div className="max-w-6xl mx-auto px-6 py-24 lg:py-32">
@@ -92,7 +131,7 @@ const Index = () => {
       </section>
 
       {/* Problem/Solution */}
-      <section className="bg-white py-24">
+      <section className="bg-white/90 backdrop-blur-sm py-24 relative z-10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
@@ -143,7 +182,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="bg-[#F9FAFB] py-24">
+      <section className="bg-[#F9FAFB]/90 backdrop-blur-sm py-24 relative z-10" id="features">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
@@ -177,7 +216,7 @@ const Index = () => {
       </section>
 
       {/* Dashboard Preview */}
-      <section className="bg-white py-24">
+      <section className="bg-white/90 backdrop-blur-sm py-24 relative z-10" id="how-it-works">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
@@ -255,7 +294,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden" style={{
+      <section className="relative overflow-hidden z-10" style={{
         background: 'linear-gradient(135deg, #0D1E44 0%, #102A5B 100%)'
       }}>
         <div className="max-w-5xl mx-auto px-6 py-24 text-center">
@@ -284,7 +323,7 @@ const Index = () => {
       </section>
 
       {/* Trust Signals Section */}
-      <section className="bg-[#F9FAFB] py-16 border-t border-gray-100">
+      <section className="bg-[#F9FAFB]/90 backdrop-blur-sm py-16 border-t border-gray-100 relative z-10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div className="flex flex-col items-center">
@@ -309,7 +348,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0D1E44] py-16">
+      <footer className="bg-[#0D1E44] py-16 relative z-10" id="contact">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12">
             <div>
@@ -321,7 +360,7 @@ const Index = () => {
               </p>
               <div className="text-[#E0E0E0]/60 text-sm">
                 <p>contact@coslynai.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 9146867271</p>
               </div>
             </div>
             
