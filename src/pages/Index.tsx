@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -69,6 +68,7 @@ const Index = () => {
                 style={{
                   background: 'linear-gradient(135deg, #6C4FD6 0%, #24E8F8 100%)'
                 }}
+                onClick={() => window.open('https://evolvyn-form1.vercel.app/', '_blank')}
               >
                 Book Free Demo
               </Button>
@@ -100,7 +100,7 @@ const Index = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Service businesses waste 40% of their time on administrative work. 
-              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent font-semibold"> EvolvynAi </span>
+              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi </span>
               automates your backend operations so you can focus on what matters most.
             </p>
           </div>
@@ -272,6 +272,7 @@ const Index = () => {
           <Button 
             size="lg" 
             className="px-12 py-4 text-lg font-semibold bg-white text-[#0D1E44] hover:bg-gray-100 mb-6 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://evolvyn-form1.vercel.app/', '_blank')}
           >
             Book Your Free Demo
           </Button>
