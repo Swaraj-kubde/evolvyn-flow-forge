@@ -100,7 +100,7 @@ const Index = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Service businesses waste 40% of their time on administrative work. 
-              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi </span>
+              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> CoslynAI </span>
               automates your backend operations so you can focus on what matters most.
             </p>
           </div>
@@ -108,7 +108,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">Before 
-                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi</span>
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> CoslynAI</span>
               </h3>
               <ul className="space-y-6">
                 {[
@@ -127,7 +127,7 @@ const Index = () => {
 
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-[#0D1E44] mb-8">After 
-                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi</span>
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> CoslynAI</span>
               </h3>
               <ul className="space-y-6">
                 {benefits.map((benefit, index) => (
@@ -182,7 +182,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0D1E44] mb-8 tracking-tight">
               How 
-              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> EvolvynAi </span>
+              <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent"> CoslynAI </span>
               Works
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
@@ -197,7 +197,7 @@ const Index = () => {
                 <div className="flex items-center gap-3 mb-8 border-b border-white/10 pb-6">
                   <LayoutDashboard className="w-7 h-7 text-[#24E8F8]" />
                   <h3 className="text-xl font-semibold text-white">
-                    <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">EvolvynAi</span> Dashboard
+                    <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">CoslynAI</span> Dashboard
                   </h3>
                 </div>
                 
@@ -264,7 +264,7 @@ const Index = () => {
           </h2>
           <p className="text-xl text-[#E0E0E0] mb-12 max-w-3xl mx-auto font-light leading-relaxed">
             Transform your operations with 
-            <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent font-semibold"> EvolvynAi's </span>
+            <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent font-semibold"> CoslynAI's </span>
             AI-powered automation. 
             Book a free demo and see results in your first week.
           </p>
@@ -314,13 +314,13 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-12">
             <div>
               <h3 className="text-3xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">EvolvynAi</span>
+                <span className="bg-gradient-to-r from-[#6C4FD6] to-[#24E8F8] bg-clip-text text-transparent">CoslynAI</span>
               </h3>
               <p className="text-[#E0E0E0]/80 mb-6 leading-relaxed">
                 AI-powered backend automation for service businesses.
               </p>
               <div className="text-[#E0E0E0]/60 text-sm">
-                <p>contact@evolvynai.com</p>
+                <p>contact@coslynai.com</p>
                 <p>+1 (555) 123-4567</p>
               </div>
             </div>
@@ -357,7 +357,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-[#E0E0E0]/60">
-            <p>&copy; 2025 EvolvynAi. All rights reserved.</p>
+            <p>&copy; 2025 CoslynAI. All rights reserved.</p>
           </div>
         </div>
       </footer>
